@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Cadastro de Pessoas</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>        
+        <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required>            
+        </div>        
+        
+        <div class="campo">
+            <label for="idade"><strong>Idade</strong></label>
+            <input type="number" name="idade" id="idade" required>
+        </div>
+
+        <div class="campo">
+            <label for="profissao"><strong>Profissão</strong></label>
+            <input type="text" name="profissão" id="profissao" required>
+        </div>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="telefone"><strong>Telefone</strong></label>
+            <input type="tel" name="telefone" id="telefone" pattern="[0-9]{2}-[0-9]{9}" required>
+        </div>
+
+        <div class="campo">
+            <label for="data_preenchimento"><strong>Data de Preenchimento</strong></label>
+            <input type="date" name="data_preenchimento" id="data_preenchimento" required>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+    </form>
+</body>
+</html>
